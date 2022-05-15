@@ -29,3 +29,7 @@ $ nase
                    ^1
 
 ```
+
+## Example
+
+<img src="nase.png"/>
