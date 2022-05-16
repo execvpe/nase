@@ -19,7 +19,7 @@ int main(int argc, char **argv) {
     printf("%s\n", "        &'                      %          ");
     printf("%s\n", "       /(                        %         ");
     printf("%s\n", "       @(                        ||        ");
-    printf("%s\n", "      \\|       ,.eee.__        _g         ");
+    printf("%s\n", "       \\|       ,.eee.__        _g         ");
     printf("%s\n", "        '&,,____ ^*&&@@@@@nasey@^          ");
     printf("%s\n", "            ^^^^^*a,                       ");
     printf("%s\n", "                   ^1                      ");
