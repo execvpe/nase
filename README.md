@@ -2,6 +2,10 @@
 
 Nase
 
+## Build
+
+`make`
+
 ## Usage
 
 `nase`
