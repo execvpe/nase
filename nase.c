@@ -9,13 +9,13 @@
 static void handler(int signum) {
 	switch (signum) {
 		case SIGINT: // Console interrupt
-			WRITE("Du machst die Nase traurig... :(\n");
+			WRITE("\rDu machst die Nase traurig... :(\n");
 			break;
 		case SIGTERM:
-			WRITE("Warum willst du die Nase loswerden? :(\n");
+			WRITE("\rWarum willst du die Nase loswerden? :(\n");
 			break;
 		default:
-			WRITE("Die Nase ist unsterblich!\n");
+			WRITE("\rDie Nase ist unsterblich!\n");
 	}
 }
 
