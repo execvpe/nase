@@ -1,10 +1,10 @@
-#include <signal.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
+#include <signal.h> // sigaction(3), _NSIG
+#include <stdio.h>  // prtinf(3)
+#include <stdlib.h> // EXIT_SUCCESS
+#include <string.h> // strlen(3)
+#include <unistd.h> // write(2)
 
-#define WRITE(S) write(STDERR_FILENO, S, strlen(S))
+#define WRITE(STR) write(STDERR_FILENO, STR, strlen(STR))
 
 static void handler(int signum) {
 	switch (signum) {
@@ -54,7 +54,7 @@ int main(int argc, char **argv) {
 	printf("%s\n", "                   ^1                      ");
 	printf("%s\n", "                                           ");
 
-	while (sleep(10) != 0) {}
+	while (sleep(30) != 0) {}
 
 	return EXIT_SUCCESS;
 }
