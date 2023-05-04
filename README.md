@@ -12,4 +12,4 @@ Nase
 
 ## Example
 
-<img src="nase.png"/>
+<img src=".readme/nase.png"/>
