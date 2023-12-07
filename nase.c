@@ -24,6 +24,29 @@ static struct sigaction ign = {
 	.sa_flags   = SA_RESTART,
 };
 
+static const char nase[] = "                                           \n"
+						   "                     .                     \n"
+						   "                   ,&                      \n"
+						   "                  ,&                       \n"
+						   "                 ,&                        \n"
+						   "                ,&                         \n"
+						   "               ,&                          \n"
+						   "              ,&                           \n"
+						   "             ,&'                           \n"
+						   "            ,&'                            \n"
+						   "           ,&'                             \n"
+						   "          ,&'                              \n"
+						   "         ,&'                               \n"
+						   "        ,&'                    ,           \n"
+						   "        &'                      %          \n"
+						   "       /(                        %         \n"
+						   "       @(                        ||        \n"
+						   "       \\|       ,.eee.__        _g         \n"
+						   "        '&,,____ ^*&&@@@@@nasey@^          \n"
+						   "            ^^^^^*a,                       \n"
+						   "                   ^1                      \n"
+						   "                                           \n";
+
 int main(int argc, char **argv) {
 	sigemptyset(&(ign.sa_mask));
 
@@ -31,28 +54,7 @@ int main(int argc, char **argv) {
 		sigaction(i, &ign, NULL);
 	}
 
-	printf("%s\n", "                                           ");
-	printf("%s\n", "                     .                     ");
-	printf("%s\n", "                   ,&                      ");
-	printf("%s\n", "                  ,&                       ");
-	printf("%s\n", "                 ,&                        ");
-	printf("%s\n", "                ,&                         ");
-	printf("%s\n", "               ,&                          ");
-	printf("%s\n", "              ,&                           ");
-	printf("%s\n", "             ,&'                           ");
-	printf("%s\n", "            ,&'                            ");
-	printf("%s\n", "           ,&'                             ");
-	printf("%s\n", "          ,&'                              ");
-	printf("%s\n", "         ,&'                               ");
-	printf("%s\n", "        ,&'                    ,           ");
-	printf("%s\n", "        &'                      %          ");
-	printf("%s\n", "       /(                        %         ");
-	printf("%s\n", "       @(                        ||        ");
-	printf("%s\n", "       \\|       ,.eee.__        _g         ");
-	printf("%s\n", "        '&,,____ ^*&&@@@@@nasey@^          ");
-	printf("%s\n", "            ^^^^^*a,                       ");
-	printf("%s\n", "                   ^1                      ");
-	printf("%s\n", "                                           ");
+	printf("%s\n", nase);
 
 	while (sleep(30) != 0) {}
 
